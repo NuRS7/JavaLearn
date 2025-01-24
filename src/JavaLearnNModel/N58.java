@@ -1,0 +1,11 @@
+package JavaLearnNModel;
+
+public class N58 {
+    public static void main(String[] args) {
+        String bigAmount = "500";
+        String greatAmount = "100000";
+
+        int hugeAmount = Integer.parseInt(bigAmount)+Integer.parseInt(greatAmount); //напишите тут ваш код
+        System.out.println(hugeAmount);
+    }
+}
