@@ -19,7 +19,8 @@ public class LeetCode345 {
                 right--;
             }
 
-            // Меняем местами гласные
+
+            // Меняем местами гласные/
             char temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
