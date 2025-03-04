@@ -1,31 +1,40 @@
 package Neetcode;
 
+import java.util.*;
+
 public class LeetCode345 {
     public static String reverseVowels(String s) {
-//        String r = "";
-//        s = s.toLowerCase();
-//        for (int i = 0; i < s.length(); i++) {
-//            char ch = s.charAt(i);
-////            if (s.charAt(i) = 'a' || s.charAt('e') || s.charAt('o') || s.charAt('i') || s.charAt('u')) {
-////                r = ch + s;,
-////            }
-//
-//
-//        }
-//        System.out.println(r);
-//        return r;
+        char[] arr = s.toCharArray(); // Преобразуем строку в массив символов
+        int left = 0, right = arr.length - 1; // Два указателя
+        Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u',
+                'A', 'E', 'I', 'O', 'U'));
+
+        while (left < right) {
+            // Двигаем левый указатель, пока не найдём гласную
+            while (left < right && !vowels.contains(arr[left])) {
+                left++;
+            }
+            // Двигаем правый указатель, пока не найдём гласную
+            while (left < right && !vowels.contains(arr[right])) {
+                right--;
+            }
 
 
-        String r = "";
-        for (int i = 0; i < s.length(); i++) {
-            int left = s.charAt(0);
-            int right = s.charAt(s.length());
-            char ch = 'a','e', ''
+            // Меняем местами гласные/
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            // Сдвигаем оба указателя внутрь
+            left++;
+            right--;
         }
-    }
-    public static void main(String[] args) {
-        String name = "Nursultan";
-        reverseVowels(name);
 
+        return new String(arr); // Преобразуем массив обратно в строку
+    }
+
+    public static void main(String[] args) {
+        String s = "IceCreAm";
+        System.out.println(reverseVowels(s));  // Вывод: "AceCreIm"
     }
 }
