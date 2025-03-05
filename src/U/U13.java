@@ -1,3 +1,5 @@
+package U;
+
 abstract class Main {
     String fname = "Nurs";
     int age = 24;
