@@ -1,3 +1,5 @@
+package U;
+
 import java.util.Arrays;
 
 public class InitDemo {

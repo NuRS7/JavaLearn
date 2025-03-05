@@ -1,3 +1,5 @@
+package U;
+
 public class Car {
     private String model;
     private String brand;
