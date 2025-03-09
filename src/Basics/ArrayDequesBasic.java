@@ -24,5 +24,34 @@ public class ArrayDequesBasic {
         while (string.peek() == null) {
             System.out.println(string.pop());
         }
+
+        ArrayDeque<PeopleAdam> people = new ArrayDeque<>();
+
+
+        System.out.println("----------");
+        people.addFirst(new PeopleAdam("Adilkhan"));
+        people.addLast(new PeopleAdam("Nurs"));
+
+        for (PeopleAdam p : people) {
+            System.out.println(p.getName());
+        }
+        System.out.println("----------");
+
+
     }
 }
+
+class PeopleAdam {
+
+    private String name;
+
+    public PeopleAdam(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+// Array
