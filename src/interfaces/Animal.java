@@ -17,6 +17,5 @@ public class Animal implements Info {
     @Override
     public void showInfo() {
         System.out.println("ID is" + this.id);
-
     }
 }
