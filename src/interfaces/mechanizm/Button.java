@@ -1,6 +1,6 @@
 package interfaces.mechanizm;
 
-public class Button{
+public class Button {
 
 
     EvenHandler evenHandler;
