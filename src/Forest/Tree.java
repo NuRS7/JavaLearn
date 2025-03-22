@@ -1,6 +1,4 @@
 package Forest;
-
-
 public class Tree {
     private String name;
     private int age;
