@@ -8,6 +8,5 @@ public class Program {
         car.move();
         airplane.move();
         boat.move();
-
     }
 }
