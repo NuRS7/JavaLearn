@@ -8,6 +8,6 @@ public class Program {
         for (Genre genre : type) {
             System.out.println(genre);
         }
-
+        System.out.println(Genre.SCIENCE.ordinal());
     }
 }
