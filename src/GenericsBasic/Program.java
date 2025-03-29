@@ -6,26 +6,27 @@ public class Program {
         int result;
         result = (int) person.getId();
         System.out.println(result);
-        Person person2 = new Person("123", "Nurs");
-        int result2 = (int) person2.getId();
-        System.out.println(result2);
+        Person<String> person2 = new Person<>("123", "Nurs");
+        System.out.println(person2.getId());
+        Person<Integer> person3 = new Person<>(123, "Nurs");
+        System.out.println(person3.getId());
     }
 
 
 }
 
-class Person {
-    private Object id;
+class Person<T> {
+    private T id;
     private String name;
 
-    public Person(Object id, String name) {
+    public Person(T id, String name) {
         this.name = name;
         this.id = id;
     }
-    public void setId(Object id) {
+    public void setId(T id) {
         this.id = id;
     }
-    public Object getId() {
+    public T getId() {
         return id;
     }
     public String getName() {
