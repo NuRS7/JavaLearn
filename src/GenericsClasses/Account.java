@@ -1,17 +1,18 @@
 package GenericsClasses;
 
-public class Account implements Accountable<String> {
-    private String id;
+public class Account<T> implements Accountable<String> {
+    private T id;
     private int sum;
 
-    public Account(String id, int sum) {
+    public Account(T id, int sum) {
         this.id = id;
         this.sum = sum;
     }
 
+
     @Override
     public String getId() {
-        return id;
+        return id.toString();
     }
 
     @Override
