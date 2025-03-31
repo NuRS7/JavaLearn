@@ -1,7 +1,7 @@
 package GenericsClasses;
 
 public interface Accountable<T> {
-    T getId();
+     T getId();
     int getSum();
     void setSum(int sum);
 }
