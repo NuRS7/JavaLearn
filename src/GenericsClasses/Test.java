@@ -24,6 +24,8 @@ public class Test<U,S> {
 
 class Demo {
     public static void main(String[] args) {
-
+        Test<String, Integer> test = new Test<>("Nurs", 13);
+        System.out.println(test.getObj());
+        System.out.println(test.getObject());
     }
 }
