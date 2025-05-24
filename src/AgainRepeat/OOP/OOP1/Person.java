@@ -1,6 +1,5 @@
 package AgainRepeat.OOP.OOP1;
 
-
 class Test {
     public static void main(String[] args) {
         Person person = new Person("Nurs", 1);
@@ -11,6 +10,7 @@ class Test {
         person3.print();
     }
 }
+
 public class Person implements PrintAll {
     String name;
     int age;
@@ -53,6 +53,7 @@ class Client extends Employee implements PrintAll {
         System.out.println("Name: " + name+", Age: " + age+", Company: " + company+", Sum: " + sum);
     }
 }
+
 interface PrintAll {
     void print();
 }
