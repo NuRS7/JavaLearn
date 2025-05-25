@@ -12,6 +12,9 @@ public class staticClasses {
         Test.counter = 9;
         Test person4 = new Test();
         person4.displayId();
+        Outer.Inner outer = new Outer.Inner();
+        outer.display();
+
     }
 }
 
@@ -24,5 +27,13 @@ class Test {
     }
     public void displayId() {
         System.out.println(" "+ id);
+    }
+}
+
+class Outer {
+    static class Inner {
+        static void display() {
+            System.out.println("Nested class");
+        }
     }
 }
